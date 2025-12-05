@@ -1,0 +1,75 @@
+python .\mst_capacitated.py
+======================================================================
+MST-Based Capacitated Clustering for Solar Trackers
+======================================================================
+[Step 1/8] Loading data...
+  Loaded 2436 unique tracker rows
+  Total weight: 23097.00
+[Step 2/8] Applying road geometry preprocessing...
+Auto-detected row orientation: horizontal
+[Step 3/8] Building Minimum Spanning Tree...
+  Computing distance matrix...
+  Building MST...
+  MST created: 2436 nodes, 2435 edges
+[Step 4/8] MST-based clustering (≤240)...
+  Clustering with capacity 240...
+  Created 98 clusters
+======================================================================
+Pass 1 (≤240) - Validation Report
+======================================================================
+Total clusters: 98
+Capacity limit: 240
+Violations: 0
+Weight distribution:
+  Min: 92.00
+  Max: 240.00
+  Mean: 235.68
+  Median: 239.00
+  Total: 23097.00
+[Step 5/8] Merging adjacent clusters (≤480)...
+  Merging adjacent clusters up to capacity 480...
+  Merged 43 pairs → 55 clusters
+======================================================================
+Pass 2 (≤480) - Validation Report
+======================================================================
+Total clusters: 55
+Capacity limit: 480
+Violations: 0
+Weight distribution:
+  Min: 237.00
+  Max: 480.00
+  Mean: 419.95
+  Median: 472.00
+  Total: 23097.00
+[Step 6/8] Subdividing clusters (≤16)...
+  Subdividing clusters to ≤16...
+  Created 1572 subclusters
+======================================================================
+Pass 3 (≤16) - Validation Report
+======================================================================
+Total clusters: 1572
+Capacity limit: 16
+Violations: 0
+Weight distribution:
+  Min: 2.00
+  Max: 16.00
+  Mean: 14.69
+  Median: 16.00
+  Total: 23097.00
+[Step 7/8] Preparing output data...
+[Step 8/8] Exporting results...
+======================================================================
+MST Clustering Complete!
+======================================================================
+Output files:
+  - mst_clustered_output.csv
+  - mst_tree.png
+  - mst_road_adjustment.png
+  - mst_pass1_240.png
+  - mst_pass2_480.png
+  - mst_pass3_16.png
+Final Statistics:
+  240-clusters: 98
+  480-clusters: 55
+  16-subclusters: 1572
+  Total weight: 23097.00

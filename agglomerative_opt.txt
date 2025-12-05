@@ -1,0 +1,93 @@
+OPTIMIZED AGGLOMERATIVE PCU CLUSTERING
+======================================================================        
+
+[Step 1/7] Loading data...
+  Loaded 2436 tracker rows
+  Total strings: 23097
+
+[Step 2/7] Building KNN adjacency graph...
+  Graph: 2436 nodes, 12901 edges
+
+[Step 3/7] Pass 1: Agglomerative clustering (≤220)...
+  Performed 2270 merges
+  Running boundary optimization...
+    Found 82 underutilized clusters
+    Made 0 beneficial swaps
+  Reassigning orphan clusters...
+    Found 36 orphan clusters
+    Reassigned 36 orphan clusters
+
+======================================================================        
+Pass 1 (≤220) - After Optimization
+======================================================================        
+Total clusters: 133
+Capacity limit: 220
+Violations (>220): 0
+
+Weight distribution:
+  Min: 38
+  Max: 220
+  Mean: 173.66
+  Median: 194
+  Std Dev: 48.22
+
+Utilization: 78.9% of 220 capacity
+
+Distribution:
+  <50% capacity: 19
+  50-70%: 23
+  70-90%: 25
+  90-100%: 52
+  >100% (violations): 14
+
+[Step 4/7] Pass 2: Merging to ≤480...
+  Performed 51 merges
+  Running boundary optimization...
+    Found 47 underutilized clusters
+    Made 0 beneficial swaps
+  Reassigning orphan clusters...
+    Found 15 orphan clusters
+    Reassigned 15 orphan clusters
+
+======================================================================        
+Pass 2 (≤480) - After Optimization
+======================================================================        
+Total clusters: 70
+Capacity limit: 480
+Violations (>480): 0
+
+Weight distribution:
+  Min: 146
+  Max: 480
+  Mean: 329.96
+  Median: 382
+  Std Dev: 105.15
+
+Utilization: 68.7% of 480 capacity
+
+Distribution:
+  <50% capacity: 19
+  50-70%: 14
+  70-90%: 28
+  90-100%: 7
+  >100% (violations): 2
+
+[Step 5/7] Exporting results...
+  Saved to agglomerative_optimized_output.csv
+
+======================================================================        
+OPTIMIZATION SUMMARY
+======================================================================        
+
+Pass 1 (≤220):
+  Clusters: 133
+  Mean utilization: 174 (78.9%)
+
+Pass 2 (≤480):
+  Clusters: 70
+  Mean utilization: 330 (68.7%)
+
+======================================================================        
+CLUSTERING COMPLETE!
+======================================================================        
+PS C:\Users\ps18286\OneDrive - Surbana Jurong Private Limited\Desktop\SteveSolarP>
